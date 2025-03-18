@@ -1,0 +1,41 @@
+class Student{
+	private int rollNo;
+	private String name;
+	private int totalSubjects;
+	private int[] marks;
+		
+	public Student(int rollNo, String n, int totalSubjects){
+		name = n;
+		this.rollNo = rollNo;
+		this.totalSubjects = totalSubjects;
+		marks = new int[totalSubjects];
+		for(int i = 0; i<totalSubjects; i++){
+			marks[i] = 70+i;
+		}
+
+	}
+	public void display(){
+
+		System.out.println("Name - " + name+ " Roll no "+rolllNo+" Total subjects "+totalSubjects);
+		System.out.println("score card");
+		for(int i = 0 ; i<marks.length; i++){
+			System.out.println(marks[i]);
+			
+		}
+	}
+	public void percentage(){
+		
+		int sum = 0;
+		for(int  i = 0; i<marks.length; i++){
+			sum = marks[i]+sum;
+		}
+		
+		int percentage = (sum/totalSubjects*100)*100;
+		System.out.print("Percentage of "+name+" : ");
+		
+		System.out.println(percentage);
+	}
+	
+	
+
+}

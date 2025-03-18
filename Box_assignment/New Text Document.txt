@@ -1,0 +1,16 @@
+class Box{
+	private int length;
+	private int breadth;
+	private int height;
+	public void display(){
+		System.out.println("Lenght of the box is " + length);
+		System.out.println("Breadth of the box is " + breadth);
+		System.out.println("Height of the box is " + height);
+
+	}
+	public int calcVolume(){
+		return length*breadth*height;
+	}
+	
+
+}

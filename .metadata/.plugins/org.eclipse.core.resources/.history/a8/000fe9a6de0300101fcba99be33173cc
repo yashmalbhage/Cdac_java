@@ -1,0 +1,15 @@
+package main;
+import sports_player_assi.CricketPlayer;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 CricketPlayer c1 = new  CricketPlayer("Player test 1", 4,10,2002,101,40000.00,1200,290);
+		 System.out.println(c1.toString());
+		 
+		 
+
+	}
+
+}

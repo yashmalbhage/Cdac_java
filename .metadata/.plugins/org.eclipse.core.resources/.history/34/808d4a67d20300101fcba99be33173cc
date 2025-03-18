@@ -1,0 +1,16 @@
+package mainprojectpack;
+
+import Staff.Employee;
+import Staff.SalesManger;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee e1 = new Employee("test1",10,12,2002,1,20000.00);
+		e1.dislpay();
+		SalesManger e2 = new SalesManger("test2",10,12,2002,1,20000.00,2000.00, 1200.00);
+		e2.display();
+	}
+
+}

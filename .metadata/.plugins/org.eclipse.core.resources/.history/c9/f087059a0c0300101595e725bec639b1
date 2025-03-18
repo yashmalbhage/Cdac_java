@@ -1,0 +1,13 @@
+package mainprojectpack;
+
+import Staff.Employee;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee e1 = new Employee("test1",10,12,2002,1,20000.00)
+
+	}
+
+}

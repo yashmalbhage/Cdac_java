@@ -1,0 +1,32 @@
+public class Prime{
+	public static void main(String args[]){
+
+		int count = 0;
+		
+		
+		for(int i = 10; i<=99; i++){
+			int primeNocnt = 0;
+			for(int j = 2; j<i ; j++){
+				
+
+
+				if(j%i==0){
+					primeNocnt++;
+		
+				}
+
+		
+
+			}
+			if(primeNocnt<2){
+			count++;
+			}
+
+	
+
+		
+		}
+	System.out.println(count);
+	}
+
+}

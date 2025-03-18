@@ -1,0 +1,11 @@
+public class BankAccountMain{
+
+	public static void main(Strings args[]){
+		BankAccount B1;
+		B1 = new BanAccount(1234, 34500);
+		B1.display();
+		
+		
+	}
+
+}
