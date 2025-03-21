@@ -1,15 +1,19 @@
 package Staff;
 
-public class Progrramer extends Employee{
+public class Progrramer extends Employee implements iTraveller{
 	private String projectTitle;
 	private int extraHours;
 	private double chargerPerExtraHour;
+	private String passportNumber;
+	private int travelhours;
 	public Progrramer(String name, int d, int m, int y, int empid, double salary, String projectTitle, int extraHours,
-			double chargerPerExtraHour) {
+			double chargerPerExtraHour,int travelhours, String passportNumber) {
 		super(name, d, m, y, empid, salary);
 		this.projectTitle = projectTitle;
 		this.extraHours = extraHours;
 		this.chargerPerExtraHour = chargerPerExtraHour;
+		this.travelhours=travelhours;
+		this.passportNumber=passportNumber;
 	}
 	public Progrramer() {
 		super();
@@ -28,6 +32,16 @@ public class Progrramer extends Employee{
 		// TODO Auto-generated method stub
 		
 		return salary+(extraHours*chargerPerExtraHour);
+	}
+	@Override
+	public String getPassportDetails() {
+		// TODO Auto-generated method stub
+		return passportNumber;
+	}
+	@Override
+	public int getTravelHours() {
+		// TODO Auto-generated method stub
+		return travelhours;
 	}
 	
 }

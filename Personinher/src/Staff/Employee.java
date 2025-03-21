@@ -18,7 +18,28 @@ public abstract class Employee extends Person {
 	
 
 	}
+	
 	public abstract double calcSalary();
+	
+	public static void displayTravellingEmployees(Employee[] arr) {
+		int totalTravelHours=0;
+		for(Employee e : arr) {
+			if(e instanceof SalesManger) {
+				System.out.println("travel hours -"+((SalesManger)e).getTravelHours());
+				System.out.println("Passport number - "+((SalesManger)e).getPassportDetails());
+				totalTravelHours +=((SalesManger)e).getTravelHours();
+				
+			}
+			if(e instanceof Progrramer) {
+				System.out.println("travel hours - "+((Progrramer)e).getTravelHours());
+				System.out.println("Passport number - "+((Progrramer)e).getPassportDetails());
+				totalTravelHours+=((Progrramer)e).getTravelHours();
+			}
+			
+		}
+		System.out.println("Total travel hours of all the employees - "+totalTravelHours);
+		
+	}
 	
 	
 	

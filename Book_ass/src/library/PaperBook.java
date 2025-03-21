@@ -23,5 +23,6 @@ public class PaperBook extends Book{
 		System.out.print("Date of publication ");
 		dateOfPublication.display();
 	}
+	
 
 }
