@@ -8,6 +8,11 @@ public class RegisteredCustomer extends Customer {
 		this.regNo=regNo;
 		// TODO Auto-generated constructor stub
 	}
+
+	@Override
+	public String toString() {
+		return "RegisteredCustomer [regNo=" + regNo + ", toString()=" + super.toString() + "]";
+	}
 	
 	
 
