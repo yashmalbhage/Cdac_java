@@ -1,8 +1,10 @@
 package Staff;
 
+import java.io.Serializable;
+
 import basic.Date;
 
-public class Person {
+public class Person implements Serializable{
 	private String name;
 	private Date bdate;
 	public Person(String name, int d, int m, int y) {

@@ -31,7 +31,7 @@ public class Stack {
 		this.top = -1;
 		arr=new int[size];
 	}
-	public void push(int t) throws StackOverflowException {
+	public void push(int t) throws StackOverflowException{
 		if(top == size-1) {
 			throw new StackOverflowException("Stack is full");
 		}else {

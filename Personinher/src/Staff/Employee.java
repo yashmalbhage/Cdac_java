@@ -1,6 +1,6 @@
 package Staff;
 
-public abstract class Employee extends Person {
+public abstract class Employee extends Person  {
 	private int empid;
 	protected double salary;
 	public Employee(String name, int d, int m, int y, int empid, double salary) {
@@ -40,6 +40,7 @@ public abstract class Employee extends Person {
 		System.out.println("Total travel hours of all the employees - "+totalTravelHours);
 		
 	}
+	public int 
 	
 	
 	
