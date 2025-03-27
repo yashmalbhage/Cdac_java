@@ -40,7 +40,6 @@ public abstract class Employee extends Person  {
 		System.out.println("Total travel hours of all the employees - "+totalTravelHours);
 		
 	}
-	public int 
 	
 	
 	

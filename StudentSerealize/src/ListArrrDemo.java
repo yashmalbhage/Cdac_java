@@ -42,8 +42,6 @@ public class ListArrrDemo {
 			if(checkstr.equals(L.get(i))) {
 				System.out.println("the given string is present at "+i+"th index");
 				break;
-			}else {
-				System.out.println("Given string is not present in list");
 			}
 		}
 		
